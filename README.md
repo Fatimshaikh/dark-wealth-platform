@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🖤 Vantage Point — Private Wealth Management
 
-## Getting Started
+A private wealth management landing page built as a design showcase, exploring **Dark Mode UI** — a near-black palette with a restrained metallic gold accent, positioned to feel like old-money private banking rather than a trendy tech startup.
 
-First, run the development server:
+**[Live Demo](#)** · **[Repo](https://github.com/Fatimshaikh/dark-wealth-platform)**
+
+---
+
+## ✨ Features
+
+- **Trust-first hero** — no lifestyle photography; instead, three stat panels (AUM, client families, years of discipline) build credibility through numbers, matching real private banking conventions
+- **Subtle grid background** at low opacity, signaling technical precision without competing with content
+- **Numbered service cards** instead of icon illustrations — a deliberate choice, since numbers read as more serious/institutional than playful icon sets
+- **Restrained hover states** — a faint gold border shift only, no scale or shadow pop, since finance sites earn trust through restraint rather than flashy interaction
+- **Deliberate copy choices** — "Request Access" instead of "Sign Up," and a compliance-style footer disclaimer, both reflecting how real private wealth firms position themselves
+- **Scroll-aware navbar** — transparent over the hero, solidifies with a blur on scroll
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org/) (App Router) |
+| Language | [TypeScript](https://www.typescriptlang.org/) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com/) |
+| Animation | [Framer Motion](https://www.framer.com/motion/) |
+| Fonts | Libre Baskerville (headings) · Inter (body) — via `next/font` |
+
+## 📁 Project Structure
+
+src/
+├── app/
+│ ├── layout.tsx
+│ ├── page.tsx
+│ └── globals.css # dark theme tokens + grid background + glow utility
+├── components/
+│ ├── Navbar.tsx
+│ ├── Hero.tsx
+│ ├── Services.tsx
+│ └── Footer.tsx
+└── data/
+└── services.ts
+
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/Fatimshaikh/dark-wealth-platform.git
+cd dark-wealth-platform
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Purpose
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Part of a series of design-style showcase projects demonstrating the same core stack (Next.js, TypeScript, Tailwind, Framer Motion) applied to distinct visual identities — this one aimed at finance, legal, and other high-trust industries where a dark, restrained aesthetic signals seriousness and commands a premium price point.
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT — free to use as a learning reference.
